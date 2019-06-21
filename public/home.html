@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="index.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css">
+
+    <title>Postal Rate Calculator</title>
+
+</head>
+
+<body style="text-align: center">
+
+    <div class="container is-block">
+
+        <h1 class="is-uppercase title">Postal Rate Calculator</h1>
+
+        <form class="box is-block" action="/rate" style="width: 960px; margin: 0 auto; text-align: center;">
+
+            <label for="shippingType">Shipping Type:</label>
+
+            <select name="shippingType" id="operationDropDown">
+
+                <option value="stamped">Letters (Stamped)</option>
+
+                <option value="metered">Letters (Metered)</option>
+
+                <option value="flats">Large Envelopes (Flats)</option>
+
+                <option value="retail">First-Class Package Service</option>
+
+            </select>
+
+            <br>
+
+            <label for="weight">Weight in ounces:</label>
+
+            <input type="text" placeholder="" name="weight" id="weight" required>
+
+            <br>
+
+            <input type="submit" class="button is-primary" value="Get Rate">
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
